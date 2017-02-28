@@ -1,4 +1,4 @@
-unit Unit1;
+锘縰nit Unit1;
 
 interface
 
@@ -49,7 +49,7 @@ procedure TMyThread.Execute;
 begin
   FreeOnTerminate := True;
   Form1.DFS;
-  Form1.Button1.Caption := '结束解算';
+  Form1.Button1.Caption := '缁撴潫瑙ｇ畻';
   Form1.Button1.OnClick := Form1.Button1Click3;
 end;
 
@@ -138,7 +138,7 @@ begin
           Font.Color := clBlack;
         end;
       end;
-  Button1.Caption := '解算';
+  Button1.Caption := '瑙ｇ畻';
   Button1.OnClick := Button1Click;
 end;
 
@@ -219,7 +219,7 @@ begin
     for j := 1 to 9 do
       if Map[i, j] = 0 then
         Ed[i, j].Font.Color := clBlue;
-  Button1.Caption := '下一个解';
+  Button1.Caption := '涓嬩竴涓В';
   Button1.OnClick := Button1Click2;
   TMyThread.Create(false);
 end;
